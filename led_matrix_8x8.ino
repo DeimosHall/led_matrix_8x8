@@ -4,7 +4,7 @@
 #define NUM_LEDS 64
 #define COLOR_ORDER GRB
 #define CHIPSET WS2812B
-#define BRIGHTNESS 128
+#define BRIGHTNESS 3
 
 CRGB leds[NUM_LEDS];
 
@@ -15,7 +15,7 @@ void setup() {
 
 void loop() {
   for (int i = 0; i < NUM_LEDS; i++) {
-    leds[i] = CRGB::Red;
+    leds[i] = CRGB::Blue;
     FastLED.show();
     delay(100);
     leds[i] = CRGB::Black;
